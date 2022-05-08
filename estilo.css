@@ -29,6 +29,25 @@ header {
     /* position: fixed; */
 }
 
+/* #titulo { 
+    display: block;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 11ch;
+
+    animation: typing 2s steps(11),
+    blink .5s infinite step-end alternate;
+    overflow: hidden;
+} Animacion de escritura */
+
+@keyframes typing {
+    from { width: 0 }
+}
+
+@keyframes blink {
+    50% { border-color: transparent }
+}
+
 .contenedor2 {
     background-color: #C4C4C4;
     height: 50px;
