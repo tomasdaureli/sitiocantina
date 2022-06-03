@@ -182,3 +182,11 @@ a{
 #especialidad3 .imgpg2 {
     margin-bottom: 100px;
 }
+
+@media (max-width: 600px) {
+
+    body {
+        background-color: white;
+    }
+    
+}
