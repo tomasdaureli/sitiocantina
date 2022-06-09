@@ -27,9 +27,48 @@
             </nav>
         </div>
     </header>
-
+    <div class="container-reserva">
+        <h2>Reserva tu lugar</h2>
+        <form>
+            <!-- <label>fecha</label> -->
+            <input type="text" placeholder=" fecha" onfocus="(this.type='date')" onblur="(this.type='text')" required><br>
+            <!-- <label>horario</label> -->
+            <select name="horario" id="horario">
+                <option disabled selected value>horario</option>
+                <option value="once">11:00</option>
+                <option value="once_media">11:30</option>
+                <option value="doce">12:00</option>
+                <option value="doce_media">12:30</option>
+                <option value="una">13:00</option>
+            </select><br>
+            <!-- <label>cantidad de personas</label> -->
+            <select name="personas" id="personas">
+                <option disabled selected value>cantidad de personas</option>
+                <option value="dos">2</option>
+                <option value="tres">3</option>
+                <option value="cuatro">4</option>
+                <option value="cinco">5</option>
+                <option value="seis">6</option>
+                <option value="siete">7</option>
+            </select><br>
+            <button type="button" onclick="alert('Hola mundo')">reservar</button>
+        </form>
+    </div>
     <footer>
         <div class="contenedor3">
+            <span class="tiras" id="tira1">
+                <h3 class="titulo">DIRECCION</h3>
+                <p class="texto-footer">Av. Alicia Moreau de Justo 220</p>
+                <p class="texto-footer">Puerto Madero</p>
+            </span>
+            <span class="tiras" id="tira2">
+                <h3 class="titulo">CONTACTO</h3>
+                <p class="texto-footer">+54 9 11 3254-7687</p><br><p class="texto-footer">atencion@parrilla22.com.ar</p>
+            </span>
+            <span class="tiras" id="tira3">
+                <h3 class="titulo">REDES</h3>
+                <p class="texto-footer">@parilla22</p>
+            </span>
             <!-- <h2 class="txt-footer">Todos los derechos reservados ©</h2> Corregir footer -->
         </div>
     </footer>

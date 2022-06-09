@@ -1,6 +1,10 @@
 body {
     background-color:#272727;
     padding-top: 200px;
+    margin: 0;
+    position: relative;
+    padding-bottom: 3em;
+    min-height: 800px;
 }
 
 h1 {
@@ -113,24 +117,50 @@ a{
     margin-left: 10px;
 }
 
-
-
-.contenedor3 {
-    background-color: #C4C4C4;
-    width: 100%;
-    height: -190px;
-    margin-top: -50px;
-    margin-bottom: 0;
+#cont3 {
+    margin-bottom: 50px;
 }
 
-.txt-footer {
-    font-family: Italiana;
-    line-height: 190px;
+footer {
+    background-color: #C4C4C4;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 220px;
+    /* display: ; */
+}
+
+.contenedor3 {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
     text-align: center;
-    size: 35.88;
-    font-weight: 400;
-    font-style: italic;
-    font-weight: bold;
+}
+
+#tira1 {
+    margin-left: 61px;
+    margin-right: 187px;
+}
+
+#tira2 {
+    margin-left: 50px;
+    margin-right: 187px;
+}
+
+#tira3 {
+    margin-left: 100px;
+    margin-right: 61px;
+}
+
+.titulo {
+    font-size: 22px;
+    font-family: Italiana;
+}
+
+.texto-footer {
+    font-size: 19px;
+    font-family: Italiana;
 }
 
 .titulos {
@@ -161,8 +191,77 @@ a{
 }
 
 #especialidad3 .imgpg2 {
-    margin-bottom: 100px;
+    margin-bottom: 200px;
 }
+
+.container-reserva {
+    background-color: #0B0A0A;
+    margin-top: 60px;
+    margin-bottom: 300px;
+    text-align: center;
+    padding: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    color: #C4C4C4;
+    text-align: center;
+    font-family: 'Italiana', serif;
+    font-size: 50px;
+}
+
+label {
+    color: #C4C4C4;
+}
+
+input {
+    background-color: #272727;
+    font-size: 30px;
+    font-family: 'Italiana', serif;
+    color: aquamarine;
+    width: 447px;
+    height: 60px;
+    margin-top: 51px;
+    margin-bottom: 40px;
+    
+}
+
+select {
+    background-color: #272727;
+    font-size: 30px;
+    font-family: 'Italiana', serif;
+    color: aquamarine;
+    width: 456px;
+    height: 60px;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+
+button {
+    margin-top: 27px;
+    margin-bottom: 10px;
+    background-color: #626262;
+    width: 330px;
+    height: 50px;
+    margin-left: 159px;
+    margin-right: 159px;
+    color: white;
+    font-family: Italiana;
+    font-size: 22px;
+    border: transparent;
+}
+
+/* input[type=date]:required:invalid::-webkit-datetime-edit {
+    color: transparent;
+}
+
+input[type=date] { color: transparent !important; } 
+.active input[type=date] { color: inherit !important; } */
 
 @media (max-width: 600px) {
 
