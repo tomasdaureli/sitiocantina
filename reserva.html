@@ -31,7 +31,7 @@
         <h2>Reserva tu lugar</h2>
         <form>
             <!-- <label>fecha</label> -->
-            <input type="text" placeholder=" fecha" onfocus="(this.type='date')" onblur="(this.type='text')" required><br>
+            <input id="fecha" type="text" placeholder=" fecha" onfocus="(this.type='date')" onblur="(this.type='text')" required><br>
             <!-- <label>horario</label> -->
             <select name="horario" id="horario">
                 <option disabled selected value>horario</option>
@@ -51,7 +51,7 @@
                 <option value="seis">6</option>
                 <option value="siete">7</option>
             </select><br>
-            <button type="button" onclick="alert('Hola mundo')">reservar</button>
+            <button type="button" id="boton">reservar</button>
         </form>
     </div>
     <footer>
@@ -73,4 +73,5 @@
         </div>
     </footer>
 </body>
+<script src="funcionalidad.js"></script>
 </html>
