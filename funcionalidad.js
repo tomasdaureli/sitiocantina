@@ -7,6 +7,7 @@ function cargarFormulario() {
 function validarFormulario() {
     let fecha = document.getElementById("fecha");
     if (fecha.value == null) {
-        alert("Debe ingresar una fecha.")
+        alert("Debe ingresar una fecha.");
     }
+    alert("Hola mundo");
 }
