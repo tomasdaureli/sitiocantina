@@ -242,6 +242,12 @@ select {
     margin-bottom: 40px;
 }
 
+option {
+    background-color: #272727;
+    color: #C4C4C4;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
 button {
     margin-top: 27px;
     margin-bottom: 10px;
