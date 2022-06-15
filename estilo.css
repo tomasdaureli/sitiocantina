@@ -4,7 +4,7 @@ body {
     margin: 0;
     position: relative;
     padding-bottom: 3em;
-    min-height: 800px;
+    min-height: 100%;
 }
 
 h1 {
@@ -194,8 +194,62 @@ footer {
     margin-bottom: 200px;
 }
 
+.contenedor-carta {
+    
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 99.99%, rgba(0, 0, 0, 0) 100%);
+    background-blend-mode: darken;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 5px;
+    margin-bottom: 200px;
+    margin-top: 43px;
+    padding-bottom: 5px;
+    
+}
+
+.carta h3 {
+    color: white;
+    font-family: Italiana;
+    font-size: 57px;
+    margin-left: 229px;
+    margin-top: 58px;
+    margin-bottom: 23px;
+    margin-right: 500px;
+}
+
+.linea {
+    color: white;
+    margin-left: 130px;
+    margin-right: 745px;
+}
+
+#aclaracion {
+    color: white;
+    font-family: Italiana;
+    font-size: 24px;
+    text-align: center;
+}
+
+dl {
+    color: white;
+    font-family: Italiana;
+    font-size: 36px;
+    /* width: 1178px; */
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+#comidas {
+    margin-bottom: 23px;
+}
+
+#bebidas {
+    margin-bottom: 40px;
+}
+
 .container-reserva {
-    background-color: #0B0A0A;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 99.99%, rgba(0, 0, 0, 0) 100%);
+    background-blend-mode: darken;
     margin-top: 60px;
     margin-bottom: 300px;
     text-align: center;

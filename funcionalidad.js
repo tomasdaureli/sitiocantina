@@ -7,16 +7,21 @@ function validarFormulario() {
     const personas = document.getElementById("personas");
     if (fecha.value == "") {
         alert("Debe ingresar una fecha.");
-        return false;
+        return;
     }
     if (horario.value == ""){
         alert("Debe ingresar el horario");
-        return false;
+        return;
     }
     if (personas.value == "") {
         alert("Debe ingresar la cantidad de personas");
-        return false;
+        return;
     }
+    abrirNuevoFormulario();
+    return;
+}
+
+function abrirNuevoFormulario() {
     confirm("Hola mundo!");
-    return true;
+    return;
 }
