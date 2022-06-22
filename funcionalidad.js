@@ -1,10 +1,14 @@
-let boton = document.getElementById("boton");
-boton.onclick = validarFormulario;
+const open = document.getElementById("botonAbrir");
+const close = document.getElementById("botonCerrar");
+const modal_container = document.getElementById("modal_container");
+open.onclick = validarDetalle;
+const fecha = document.getElementById("fecha");
+const horario = document.getElementById("horario");
+const personas = document.getElementById("personas");
+const formulario = document.getElementById("formulario");
+const form_modal = document.getElementById("formulario_modal");
 
-function validarFormulario() {
-    const fecha = document.getElementById("fecha");
-    const horario = document.getElementById("horario");
-    const personas = document.getElementById("personas");
+function validarDetalle() {
     if (fecha.value == "") {
         alert("Debe ingresar una fecha.");
         return;
@@ -18,10 +22,47 @@ function validarFormulario() {
         return;
     }
     abrirNuevoFormulario();
+    formulario.reset();
     return;
 }
 
+const nombre = document.getElementById("in1");
+const apellido = document.getElementById("in2");
+const telefono = document.getElementById("in3");
+const mail = document.getElementById("in4");
+
 function abrirNuevoFormulario() {
-    confirm("Hola mundo!");
+    // confirm("Hola mundo!");
+    const detalles = document.getElementById("detalle");
+    detalles.textContent = `${fecha.value}, ${horario.value}, ${personas.value} personas.`;
+    modal_container.classList.add("show");
+    close.onclick = validarContacto;
     return;
+}
+
+function validarContacto() {
+    if (nombre.value == "") {
+        alert("Debe ingresar su nombre.");
+        return;
+    }
+    if (apellido.value == ""){
+        alert("Debe ingresar su apellido");
+        return;
+    }
+    if (telefono.value == "") {
+        alert("Debe ingresar su numero de telefono.");
+        return;
+    }
+    if (mail.value == "") {
+        alert("Debe ingresar su mail.");
+        return;
+    }
+    alert("Reserva realizada con exito. Te llegara un correo electronico con la confirmacion de la misma.")
+    cerrarFormulario();
+    form_modal.reset();
+    return;
+}
+
+function cerrarFormulario() {
+    modal_container.classList.remove("show");
 }

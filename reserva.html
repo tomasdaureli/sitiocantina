@@ -29,30 +29,53 @@
     </header>
     <div class="container-reserva">
         <h2>Reserva tu lugar</h2>
-        <form>
+        <form id="formulario">
             <!-- <label>fecha</label> -->
-            <input id="fecha" type="text" placeholder=" fecha" onfocus="(this.type='date')" onblur="(this.type='text')" required><br>
+            <input id="fecha" type="text" placeholder=" fecha" onfocus="(this.type='date')" onblur="(this.type='text')" ><br>
             <!-- <label>horario</label> -->
             <select name="horario" id="horario">
                 <option disabled selected value>horario</option>
-                <option value="once">11:00</option>
-                <option value="once_media">11:30</option>
-                <option value="doce">12:00</option>
-                <option value="doce_media">12:30</option>
-                <option value="una">13:00</option>
+                <option value="11:00hs">11:00</option>
+                <option value="11:30hs">11:30</option>
+                <option value="12:00hs">12:00</option>
+                <option value="12:30hs">12:30</option>
+                <option value="13:00hs">13:00</option>
             </select><br>
             <!-- <label>cantidad de personas</label> -->
             <select name="personas" id="personas">
                 <option disabled selected value>cantidad de personas</option>
-                <option value="dos">2</option>
-                <option value="tres">3</option>
-                <option value="cuatro">4</option>
-                <option value="cinco">5</option>
-                <option value="seis">6</option>
-                <option value="siete">7</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
             </select><br>
-            <button type="button" id="boton">reservar</button>
+            <button type="button" id="botonAbrir">reservar</button>
         </form>
+    </div>
+    <div id="modal_container" class="modal-container">
+        <div class="modal">
+            <h2>Ingresa tu informacion</h2>
+            <p class="subtitulo">Detalles de la reserva</p>
+            <p id="detalle"></p>
+            <p class="subtitulo">Contacto</p>
+            <form id="formulario_modal">
+                <div id="arriba">
+                    <label class="lblArr">nombre</label>
+                    <input class="input-modal" id="in1" type="text">
+                    <label class="lblArr">apellido</label>
+                    <input class="input-modal" id="in2" type="text"><br>
+                </div>
+                <div id="abajo">
+                    <label class="lblAb" id="lbl3">telefono</label><br>
+                    <input class="input-modal" id="in3" type="tel">
+                    <label class="lblAb" id="lbl4">mail</label><br>
+                    <input class="input-modal" id="in4" type="email">
+                </div>
+                <button type="button" id="botonCerrar">reservar</button>
+            </form>
+        </div>
     </div>
     <footer>
         <div class="contenedor3">
@@ -72,6 +95,6 @@
             <!-- <h2 class="txt-footer">Todos los derechos reservados ©</h2> Corregir footer -->
         </div>
     </footer>
+    <script src="funcionalidad.js"></script>
 </body>
-<script src="funcionalidad.js"></script>
 </html>

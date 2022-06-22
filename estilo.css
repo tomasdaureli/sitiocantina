@@ -4,7 +4,7 @@ body {
     margin: 0;
     position: relative;
     padding-bottom: 3em;
-    min-height: 100%;
+    min-height: 100px;
 }
 
 h1 {
@@ -275,7 +275,7 @@ label {
 
 input {
     background-color: #272727;
-    font-size: 30px;
+    font-size: 25px;
     font-family: 'Italiana', serif;
     color: aquamarine;
     width: 447px;
@@ -316,12 +316,97 @@ button {
     border: transparent;
 }
 
-/* input[type=date]:required:invalid::-webkit-datetime-edit {
-    color: transparent;
+.modal-container {
+    display: flex;
+    background-color: #272727;
+    position:fixed;
+    justify-content: center;
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    
 }
 
-input[type=date] { color: transparent !important; } 
-.active input[type=date] { color: inherit !important; } */
+.show {
+    pointer-events: auto;
+    opacity: 1;
+}
+
+.modal {
+    background-color: black;
+    color: white;
+    margin-top: 50px;
+    height: 650px;
+    width: 600px;
+    max-width: 100%;
+    padding: 30px 50px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.subtitulo {
+    color: #c9c9c9;
+    font-family: Italiana;
+    font-size: 20px;
+}
+
+#detalle {
+    color: white;
+    font-family: Italiana;
+    font-size: 25px;
+}
+
+label {
+    font-family: Italiana;
+}
+
+.input-modal {
+    background-color: #000000;
+    width: 200px;
+    margin-top: 20px;
+}
+
+.lblArr {
+    margin-right: -105px;
+}
+
+/* .lblAb {
+    /* margin-left: 100px; */
+
+
+#arriba {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 50px;
+}
+
+#abajo {
+    display: flex;
+    /* flex-direction: row; */
+    /* justify-content: space-around; */
+    /* margin-left: 50px; */
+}
+
+#lbl3 {
+    margin-left: 70px;
+}
+
+#in3 {
+    margin-left: -55px;
+}
+
+#lbl4 {
+    margin-left: 50px;
+    margin-right: -138px;
+}
+
+#in4 {
+    margin-left: 105px;
+}
 
 @media (max-width: 600px) {
 
@@ -332,8 +417,43 @@ input[type=date] { color: transparent !important; }
         width: 100%;
         position: absolute;
     }
+
+    #titulo {
+        font-size: 64px;
+    }
+
+    .contenedor2 {
+        height: 12vh;
+    }
     
     .boton {
         font-size: 17px;
     }
+
+    .contenedor-ppal {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedor-img {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #parrilla {
+        width: 350px;
+    }
+
+    #comida {
+        width: 350px;
+    }
+
+    #restaurant {
+        width: 350px;
+    }
+
+    .texto {
+        width: 20%;
+    }
+
 }
