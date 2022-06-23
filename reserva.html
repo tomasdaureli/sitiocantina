@@ -29,7 +29,7 @@
     </header>
     <div class="container-reserva">
         <h2 id="title">Reserva tu lugar</h2>
-        <form id="formulario">
+        <form id="formulario" method="post">
             <!-- <label>fecha</label> -->
             <input id="fecha" type="text" placeholder=" fecha" onfocus="(this.type='date')" onblur="(this.type='text')" min="2022-06-22" ><br>
             <!-- <label>horario</label> -->
@@ -73,7 +73,7 @@
             <p class="subtitulo">Detalles de la reserva</p>
             <p id="detalle"></p>
             <p class="subtitulo">Contacto</p>
-            <form id="formulario_modal">
+            <form id="formulario_modal" method="post">
                 <div id="arriba">
                     <label class="lblArr" id="lbl1">nombre</label>
                     <input class="input-modal" id="in1" type="text">
