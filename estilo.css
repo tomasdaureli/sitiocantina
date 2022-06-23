@@ -134,11 +134,16 @@ footer {
     padding-top: 20px;
     display: flex;
     flex-direction: row;
-    /* justify-content: space-around; */
+    justify-content: flex-start;
     text-align: center;
 }
 
-#tira1 {
+.tiras {
+    margin-right: 150px;
+    margin-left: 100px;
+}
+
+/* #tira1 {
     margin-left: 61px;
     margin-right: 187px;
 }
@@ -151,7 +156,7 @@ footer {
 #tira3 {
     margin-left: 100px;
     margin-right: 61px;
-}
+} */
 
 .titulo {
     font-size: 22px;
@@ -314,6 +319,17 @@ button {
     font-family: Italiana;
     font-size: 22px;
     border: transparent;
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.botoncerrar {
+    width: 150px;
+    margin: 20px;
 }
 
 .modal-container {

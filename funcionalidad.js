@@ -1,7 +1,8 @@
-const open = document.getElementById("botonAbrir");
-const close = document.getElementById("botonCerrar");
+const abrir = document.getElementById("botonAbrir");
+const cerrar = document.getElementById("botonCerrar");
+const cancelar = document.getElementById("botonCancelar");
 const modal_container = document.getElementById("modal_container");
-open.onclick = validarDetalle;
+abrir.onclick = validarDetalle;
 const fecha = document.getElementById("fecha");
 const horario = document.getElementById("horario");
 const personas = document.getElementById("personas");
@@ -36,7 +37,8 @@ function abrirNuevoFormulario() {
     const detalles = document.getElementById("detalle");
     detalles.textContent = `${fecha.value}, ${horario.value}, ${personas.value} personas.`;
     modal_container.classList.add("show");
-    close.onclick = validarContacto;
+    cerrar.onclick = validarContacto;  
+    cancelar.onclick = cerrarFormulario;
     return;
 }
 
