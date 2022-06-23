@@ -13,10 +13,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="body" id="reserva">
     <header>
         <div class="contenedor1">
-            <h1>Parrilla 22</h1>
+            <h1 id="tituloppal">Parrilla 22</h1>
         </div>
         <div class="contenedor2">
             <nav class="menu">
@@ -28,18 +28,28 @@
         </div>
     </header>
     <div class="container-reserva">
-        <h2>Reserva tu lugar</h2>
+        <h2 id="title">Reserva tu lugar</h2>
         <form id="formulario">
             <!-- <label>fecha</label> -->
-            <input id="fecha" type="text" placeholder=" fecha" onfocus="(this.type='date')" onblur="(this.type='text')" ><br>
+            <input id="fecha" type="text" placeholder=" fecha" onfocus="(this.type='date')" onblur="(this.type='text')" min="2022-06-22" ><br>
             <!-- <label>horario</label> -->
             <select name="horario" id="horario">
                 <option disabled selected value>horario</option>
-                <option value="11:00hs">11:00</option>
                 <option value="11:30hs">11:30</option>
                 <option value="12:00hs">12:00</option>
                 <option value="12:30hs">12:30</option>
                 <option value="13:00hs">13:00</option>
+                <option value="13:30hs">13:30</option>
+                <option value="14:00hs">14:00</option>
+                <option value="14:30hs">14:30</option>
+                <option value="15:00hs">15:00</option>
+                <option value="20:00hs">20:00</option>
+                <option value="20:30hs">20:30</option>
+                <option value="21:00hs">21:00</option>
+                <option value="21:30hs">21:30</option>
+                <option value="22:00hs">22:00</option>
+                <option value="22:30hs">22:30</option>
+                <option value="23:00hs">23:00</option>
             </select><br>
             <!-- <label>cantidad de personas</label> -->
             <select name="personas" id="personas">
@@ -50,21 +60,24 @@
                 <option value="5">5</option>
                 <option value="6">6</option>
                 <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
             </select><br>
             <button type="button" id="botonAbrir">reservar</button>
         </form>
     </div>
     <div id="modal_container" class="modal-container">
         <div class="modal">
-            <h2>Ingresa tu informacion</h2>
+            <h2 id="titlemodal">Ingresa tu informacion</h2>
             <p class="subtitulo">Detalles de la reserva</p>
             <p id="detalle"></p>
             <p class="subtitulo">Contacto</p>
             <form id="formulario_modal">
                 <div id="arriba">
-                    <label class="lblArr">nombre</label>
+                    <label class="lblArr" id="lbl1">nombre</label>
                     <input class="input-modal" id="in1" type="text">
-                    <label class="lblArr">apellido</label>
+                    <label class="lblArr" id="lbl2">apellido</label>
                     <input class="input-modal" id="in2" type="text"><br>
                 </div>
                 <div id="abajo">
@@ -80,7 +93,7 @@
             </form>
         </div>
     </div>
-    <footer>
+    <footer id="footerres">
         <div class="contenedor3" id="footer">
             <span class="tiras" id="tira1">
                 <h3 class="titulo">DIRECCION</h3>
@@ -93,7 +106,7 @@
             </span>
             <span class="tiras" id="tira3">
                 <h3 class="titulo">REDES</h3>
-                <p class="texto-footer">@parilla22</p>
+                <p class="texto-footer">@parrilla22</p>
             </span>
             <!-- <h2 class="txt-footer">Todos los derechos reservados ©</h2> Corregir footer -->
         </div>

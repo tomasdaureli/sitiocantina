@@ -1,13 +1,12 @@
-body {
+.body {
     background-color:#272727;
     padding-top: 200px;
     margin: 0;
     position: relative;
     padding-bottom: 3em;
-    min-height: 100px;
 }
 
-h1 {
+#tituloppal {
     text-align: center;
     font-family: 'Allura', cursive;
     color: white;
@@ -57,14 +56,59 @@ header {
     text-align: center;
     line-height: 20px;
     transition-duration: 0.4s;
+    text-decoration: none;
 }
 
 a{
     color: #000000;
-    text-decoration: none;
 }
 
-.contenedor-img {
+.contenedor-cartas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 40px;
+    margin-bottom: 220px;
+}
+
+#carta1 {
+    position: static;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 99.99%, rgba(0, 0, 0, 0) 100%);
+    background-blend-mode: darken;
+    border-radius: 5px;
+    width: 25rem;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    font-family: Italiana;
+    color: #c9c9c9;
+}
+#carta2 {
+    position: static;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 99.99%, rgba(0, 0, 0, 0) 100%);
+    background-blend-mode: darken;
+    border-radius: 5px;
+    width: 25rem;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    font-family: Italiana;
+    color: #c9c9c9;
+}
+#carta3 {
+    position: static;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.25) 99.99%, rgba(0, 0, 0, 0) 100%);
+    background-blend-mode: darken;
+    border-radius: 5px;
+    width: 25rem;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    font-family: Italiana;
+    color: #c9c9c9;
+}
+
+/* .contenedor-img {
     display: flex;
 }
 
@@ -86,7 +130,7 @@ a{
     margin-top: 72px;
     margin-left: 72px;
     text-align: left;
-    /* position: relative; */
+    position: relative;
 }
 
 #txt2 {
@@ -119,7 +163,7 @@ a{
 
 #cont3 {
     margin-bottom: 50px;
-}
+} */
 
 footer {
     background-color: #C4C4C4;
@@ -134,29 +178,21 @@ footer {
     padding-top: 20px;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-around;
+    align-items: flex-start;
     text-align: center;
 }
 
 .tiras {
-    margin-right: 150px;
-    margin-left: 100px;
-}
-
-/* #tira1 {
-    margin-left: 61px;
-    margin-right: 187px;
-}
-
-#tira2 {
-    margin-left: 50px;
-    margin-right: 187px;
+    width: 250px;
+    /* margin-right: 150px; */
+    /* margin-left: 100px; */
 }
 
 #tira3 {
-    margin-left: 100px;
-    margin-right: 61px;
-} */
+    /* margin-left: 31px; */
+    margin-right: 20px;
+}
 
 .titulo {
     font-size: 22px;
@@ -169,6 +205,7 @@ footer {
 }
 
 .titulos {
+    color: white;
     font-family: Italiana;
     font-size: 96px;
     text-align: center;
@@ -426,6 +463,10 @@ label {
 
 @media (max-width: 600px) {
 
+    #body {
+        min-height: 2000px;
+    }
+
     header {
         top: 0;
         left: 0;
@@ -434,42 +475,206 @@ label {
         position: absolute;
     }
 
-    #titulo {
+    #tituloppal {
         font-size: 64px;
     }
 
     .contenedor2 {
-        height: 12vh;
+        height: 8.5vh;
     }
     
     .boton {
-        font-size: 17px;
+        font-size: 15px;
     }
 
-    .contenedor-ppal {
+    .contenedor-cartas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 420px;
+    }
+
+    #carta1 {
+        margin-top: 20px;
+        width: 20rem;
+    }
+
+    #carta2 {
+        margin-top: 20px;
+        width: 20rem;
+    }
+
+    #carta3 {
+        margin-top: 20px;
+        width: 20rem;
+        margin-bottom: 20px;
+    }
+
+    footer {
+        height: 400px;
+    }
+
+    .contenedor3 {
+        margin: 0;
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .contenedor-img {
+    .titulos {
+        font-size: 10vw;
+        margin-top: 40px;
+    }
+
+    .contenedoresp {
+        margin-bottom: 500px;
+    }
+
+    .especialidades {
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    #parrilla {
-        width: 350px;
+    .imgpg2 {
+        margin: 0 auto;
+        margin-bottom: 15px;
     }
 
-    #comida {
-        width: 350px;
+    #costillar {
+        width: 310px;
     }
 
-    #restaurant {
-        width: 350px;
+    #costillitas {
+        width: 310px;
     }
 
-    .texto {
-        width: 20%;
+    #tortilla {
+        width: 310px;
     }
+
+    .textospg2 {
+        font-size: 12px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #text3 {
+        margin-top: -160px;
+    }
+
+    #footeresp {
+        height: 500px;
+    }
+    #footerres {
+        height: 500px;
+    }
+
+    #titulo-carta {
+        width: 80%;
+        font-size: 35px;
+        margin-left: 50px;
+    }
+
+    .contenedor-carta {
+        margin-bottom: 500px;
+    }
+
+    .linea {
+        margin-left: 10px;
+        font-size: xx-small;
+    }
+
+    #aclaracion {
+        font-size: medium;
+        margin: 10px;
+    }
+
+    #comidas {
+        margin-top: 20px;
+        font-size: medium;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #bebidas {
+        margin-top: 20px;
+        font-size: small;
+        margin-left: 10px;
+        margin-right: 0px;
+    }
+
+    .container-reserva {
+        width: 370px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 500px;
+    }
+
+    #title {
+        font-size: 35px;
+    }
+
+    input {
+        width: 250px;
+    }
+
+    select {
+        width: 250px;
+    }
+
+    .modal {
+        width: 68%;
+        height: 1000px;
+    }
+
+    #titlemodal {
+        font-size: 40px;
+    }
+
+    #formulario_modal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #arriba {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    #abajo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #in3 {
+        margin-left: 0px;
+    }
+
+    #in4 {
+        margin-left: 0px;
+    }
+
+    #lbl1 {
+        margin-right: 150px;
+    }
+    #lbl2 {
+        margin-right: 150px;
+    }
+    #lbl3 {
+        margin-right: 220px;
+    }
+    #lbl4 {
+        margin-right: 220px;
+    }
+
+
 
 }
